@@ -32,7 +32,7 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: 320px 1fr;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 12px rgba(0, 0, 0, 0.25);
@@ -154,8 +154,6 @@ aside header {
 
 /* message panel */
 
-
-
 .chat-header {
     background-color: var(--grey-300);
     border-bottom: 1px solid var(--grey-500);
@@ -179,6 +177,8 @@ aside header {
 .chat-panel {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    min-height: 0;
 }
 
 .messages {
@@ -187,7 +187,7 @@ aside header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .message {
